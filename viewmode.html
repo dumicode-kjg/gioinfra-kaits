@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>한국산업기술보호협회 현황판</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="viewmode/common/css/style.css" />
+<script type="text/javascript" src="viewmode/common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="viewmode/common/js/viewmode.js"></script>
+
+</head>
+<body>
+	
+	<div class="all_link open">
+		<span class="btn_box">
+			<span class="nav_btn">
+				<span class="nav_icon"></span>
+			</span>
+		</span>
+		<div class="info">
+			<h1>PROJECT VIEW MODE</h1>
+			<p>
+				<strong>작업명 : </strong>한국산업기술보호협회<br />
+				<strong>작업일시 : </strong>2024.08<br />
+				<strong>작업내역 : </strong>레이아웃<br />
+				(접근성,반응형)
+			</p>
+		</div>
+		<div class="link_list">
+			<ul>
+				<li class="on">
+					<span class="link">html/index.html</span>
+					<span class="txt">메인</span>
+				</li>
+				<li>
+					<span class="link">html/sub_sample.html</span>
+					<span class="txt">서브레이아웃</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".nav_btn").click(function(){
+				$(".all_link").toggleClass("open");
+			});
+
+			$(".link_list ul li").click(function(){
+				$(".link_list ul li").removeClass("on");
+				$(this).addClass("on");
+				$(".view_box").attr("src",$(this).find(".link").text());
+			});
+
+		});
+	</script>
+
+	<div class="view_wrap"><iframe class="view_box" src="html/index.html"></iframe></div>
+
+</body>
+</html>
