@@ -36,25 +36,34 @@ $(function () {
     $(".m_gnb a.in_ul").not(this).removeClass("active");
     $(this).toggleClass("active");
 
-    $(".m_gnb .depth > li > .depth02")
-      .not($(this).next(".depth02"))
-      .slideUp(250);
+    $(".m_gnb .depth > li > .depth02").not($(this).next(".depth02")).slideUp(250);
     $(this).next(".depth02").stop(true, false).slideToggle(250);
 
     return false;
   });
 
-  //foot banners
   var footBnSwiper = new Swiper(".foot_banners .swiper-container", {
     autoplay: {
       delay: 4000,
       stopOnLastSlide: false,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     slidesPerView: "auto",
-    loop: true,
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+    },
     observer: true,
     observeParents: true,
+    pagination: {
+      el: ".foot_banners .swiper-pagination",
+      type: "custom",
+      renderCustom: function (swiper, current, total) {
+        return '<span class="current">' + current + "</span>" + '<span class="slash">/</span>' + '<span class="total">' + total + "</span>";
+      },
+    },
     navigation: {
       nextEl: ".foot_banners .swiper-button-next",
       prevEl: ".foot_banners .swiper-button-prev",
@@ -86,9 +95,12 @@ $(function () {
   });
 });
 
-//모바일 검색
+//모바일 통합검색
 function toggleSearch() {
   $("body").removeClass("openAllMenu").toggleClass("openSearch");
+  if ($("#m_search_wrap").css("display") !== "none") {
+    $("#mHeadSearch").focus();
+  }
 }
 
 //모바일 전체메뉴
@@ -110,12 +122,7 @@ function chkGoTop() {
     $(".go_top").hide();
   }
 
-  if (
-    $(window).scrollTop() >
-    $(document).outerHeight() -
-      $(window).outerHeight() -
-      $("#footer").outerHeight()
-  ) {
+  if ($(window).scrollTop() > $(document).outerHeight() - $(window).outerHeight() - $("#footer").outerHeight()) {
     $(".go_top").addClass("end_top");
   } else {
     $(".go_top").removeClass("end_top");
@@ -125,25 +132,21 @@ function chkGoTop() {
 //popup
 // 접근성 관련 포커스 강제 이동
 function accessibilityFocus() {
-  $(document).on(
-    "keydown",
-    "[data-focus-prev], [data-focus-next]",
-    function (e) {
-      var next = $(e.target).attr("data-focus-next"),
-        prev = $(e.target).attr("data-focus-prev"),
-        target = next || prev || false;
+  $(document).on("keydown", "[data-focus-prev], [data-focus-next]", function (e) {
+    var next = $(e.target).attr("data-focus-next"),
+      prev = $(e.target).attr("data-focus-prev"),
+      target = next || prev || false;
 
-      if (!target || e.keyCode != 9) {
-        return;
-      }
-
-      if ((!e.shiftKey && !!next) || (e.shiftKey && !!prev)) {
-        setTimeout(function () {
-          $('[data-focus="' + target + '"]').focus();
-        }, 1);
-      }
+    if (!target || e.keyCode != 9) {
+      return;
     }
-  );
+
+    if ((!e.shiftKey && !!next) || (e.shiftKey && !!prev)) {
+      setTimeout(function () {
+        $('[data-focus="' + target + '"]').focus();
+      }, 1);
+    }
+  });
 }
 
 function tooltip() {
