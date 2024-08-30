@@ -2,6 +2,9 @@ $(function () {
   //visual
   var maVisual = new Swiper(".ma_visual .swiper-container", {
     effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
     loop: true,
     speed: 2000,
     autoplay: {
@@ -11,10 +14,17 @@ $(function () {
     observer: true,
     observeParents: true,
     pagination: {
-      el: ".ma_visual .swiper-pagination",
+      el: ".ma_visual .swiper-paging",
       type: "custom",
       renderCustom: function (swiper, current, total) {
-        return '<span class="current">0' + current + "</span>" + '<span class="slash">/</span>' + '<span class="total">0' + total + "</span>";
+        $(".ma_visual .swiper-paging .current").html("0" + current);
+        $(".ma_visual .swiper-paging .total").html("0" + total);
+        $(".ma_visual .swiper-paging .val").removeClass("load").width(0);
+        $(".ma_visual .swiper-paging .val").addClass("load");
+        $(".ma_visual .swiper_ctrl .bar").removeClass("load");
+        setTimeout(function () {
+          $(".ma_visual .swiper_ctrl .bar").addClass("load");
+        }, 50);
       },
     },
     navigation: {
@@ -51,6 +61,9 @@ $(function () {
       },
     },
   });
+  setTimeout(function () {
+    $(".ma_visual").addClass("start");
+  }, 200);
 
   //main news tab
   var $newsTabLink = $(".ma_news_tab a");
@@ -62,7 +75,7 @@ $(function () {
 
   //main alarm
   var maAlarm = new Swiper(".ma_alarm .swiper-container", {
-    spaceBetween : 16,
+    spaceBetween: 16,
     loop: true,
     autoplay: {
       delay: 3000,
@@ -111,5 +124,4 @@ $(function () {
       },
     },
   });
-
 });
