@@ -126,6 +126,9 @@
   font-weight: 500;
   z-index: 2;
 }
+#gnb > li > a:focus {
+  outline-offset: -2px;
+}
 #gnb > li.active > a > span,
 #gnb > li > a:hover > span,
 #gnb > li > a:focus > span {
@@ -487,6 +490,9 @@
   width: auto;
   padding: 0 12px;
   text-align: center;
+}
+.foot_banners .swiper-slide a {
+  outline-offset: -2px;
 }
 .foot_banners .swiper-slide img {
   height: 80px;

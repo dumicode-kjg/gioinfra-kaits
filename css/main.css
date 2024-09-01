@@ -31,6 +31,9 @@
 .ma_visual .inbox {
   display: block;
 }
+.ma_visual .inbox:focus {
+  outline-offset: -2px;
+}
 .ma_visual .inbox .visual_txt {
   color: #fff;
   font-size: 68px;
@@ -155,6 +158,56 @@
 }
 .ma_visual.start .swiper_ctrl .bar.load {
   transition-duration: 5s;
+}
+
+.ma_visual_menu {
+  width: 512px;
+  color: #fff;
+}
+.ma_visual_menu .title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.ma_visual_menu .title_p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.ma_visual_menu .menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0 0 -16px;
+}
+.ma_visual_menu .menu > li {
+  width: 50%;
+  padding: 16px 0 0 16px;
+}
+.ma_visual_menu .inbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px 8px 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.ma_visual_menu .inbox .txt {
+  flex: 1;
+  margin-right: 8px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.ma_visual_menu .inbox .ico {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.ma_visual_menu .inbox:hover {
+  background-color: #0075e0;
 }
 
 .ma_content {
@@ -383,16 +436,16 @@
   height: 24px;
   margin: 0;
   border: none;
-  background-image: url(../images/main/ico_arrow_left_black.svg), url(../images/main/ico_arrow_left_blue.svg);
+  background-image: url(../images/btn_24_prev_blue.svg), url(../images/btn_24_prev_black.svg);
   background-color: transparent;
   background-repeat: no-repeat, no-repeat;
-  background-position: center, -9999px;
+  background-position: -9999px center, center center;
   background-size: contain, contain;
   text-indent: -9999px;
   overflow: hidden;
 }
 .ma_alarm .titlebox .swiper_ctrl .swiper-button-prev:hover {
-  background-position: -9999px, center;
+  background-position: center center, -9999px center;
 }
 .ma_alarm .titlebox .swiper_ctrl .swiper-button-next {
   position: static;
@@ -400,16 +453,16 @@
   height: 24px;
   margin: 0;
   border: none;
-  background-image: url(../images/main/ico_arrow_right_black.svg), url(../images/main/ico_arrow_right_blue.svg);
+  background-image: url(../images/btn_24_next_blue.svg), url(../images/btn_24_next_black.svg);
   background-color: transparent;
   background-repeat: no-repeat, no-repeat;
-  background-position: center, -9999px;
+  background-position: -9999px center, center center;
   background-size: contain, contain;
   text-indent: -9999px;
   overflow: hidden;
 }
 .ma_alarm .titlebox .swiper_ctrl .swiper-button-next:hover {
-  background-position: -9999px, center;
+  background-position: center center, -9999px center;
 }
 
 .ma_alarm .titlebox .swiper_ctrl .swiper-pagination {
@@ -437,12 +490,19 @@
   width: 24px;
   height: 24px;
   border: none;
-  background: url(../images/main/ico_stop.svg) no-repeat center/contain;
+  background-image: url(../images/btn_24_stop_blue.svg), url(../images/btn_24_stop_black.svg);
+  background-color: transparent;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -9999px center, center center;
+  background-size: contain, contain;
   text-indent: -9999px;
   overflow: hidden;
 }
 .ma_alarm .titlebox .swiper_ctrl .btn_stop_play.stop {
-  background-image: url(../images/main/ico_play.svg);
+  background-image: url(../images/btn_24_play_blue.svg), url(../images/btn_24_play_black.svg);
+}
+.ma_alarm .titlebox .swiper_ctrl .btn_stop_play:hover {
+  background-position: center center, -9999px center;
 }
 .ma_alarm .alarm_swiper {
   margin-top: 32px;
@@ -465,73 +525,248 @@
   background-size: contain;
 }
 
-/* ma_twobanner */
-.ma_twobanner {
+/* ma_eduevt_ismnews */
+.ma_eduevt_ismnews {
+  position: relative;
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+.ma_eduevt_ismnews::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  width: 155px;
+  height: 634px;
+  background: url(../images/main/bg_KAITS.svg) no-repeat center/contain;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.ma_eduevt_ismnews .inner_center {
   display: flex;
 }
-.ma_twobanner li {
-  flex: 1;
+.ma_eduevt_ismnews .titlebox {
   display: flex;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
-}
-.ma_twobanner .inbox {
-  flex: 1;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  max-width: 710px;
-  height: 227px;
+  margin-bottom: 32px;
 }
-.ma_twobanner li:first-child .inbox {
-  margin-left: auto;
-  padding: 0 60px 0 10px;
-}
-.ma_twobanner li:last-child .inbox {
-  margin-right: auto;
-  padding: 0 10px 0 60px;
-}
-.ma_twobanner .inbox .txtbox {
-  flex: 1;
-  margin-right: 10px;
-  color: #fff;
-}
-.ma_twobanner .inbox .txtbox .tit {
-  font-size: 32px;
-  line-height: 38px;
+.ma_eduevt_ismnews .titlebox .title {
+  color: #555;
+  font-size: 40px;
+  line-height: 60px;
   font-weight: 700;
 }
-.ma_twobanner .inbox .txtbox .txt {
-  margin-top: 10px;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 500;
+.ma_eduevt_ismnews .titlebox .title .color {
+  color: #0075e0;
+  font-weight: 900;
 }
-.ma_twobanner .inbox .btn_go {
-  flex: none;
+
+.ma_eduevt_ismnews .btn_more {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #1d1d1d;
+  background-image: url(../images/ico_20_more_blue.svg), url(../images/ico_20_more_black.svg);
+  background-color: transparent;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -9999px center, center center;
+  background-size: 20px, 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+  z-index: 1;
+}
+.ma_eduevt_ismnews .btn_more:hover {
+  border-color: #0075e0;
+  background-color: #e7f3ff;
+  background-position: center center, -9999px center;
+}
+
+.ma_eduevt {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+.ma_eduevt .swiper-slide {
+  height: auto;
+}
+.ma_eduevt .inbox {
   display: flex;
-  min-width: 174px;
-  padding: 11px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+.ma_eduevt .inbox:focus {
+  outline: none;
+}
+.ma_eduevt .inbox .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background-color: #ff8a00;
   color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 5;
+}
+.ma_eduevt .inbox .date .yymm {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+.ma_eduevt .inbox .date .dd {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+.ma_eduevt .inbox .imgbox {
+  position: relative;
+  height: 233px;
+  border: 1px solid #d8d8d8;
+  overflow: hidden;
+}
+.ma_eduevt .inbox .imgbox .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ma_eduevt .inbox .txtbox {
+  margin: 16px 0;
+}
+.ma_eduevt .inbox .txtbox .tit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.ma_eduevt .inbox .txtbox .txt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+  color: #555;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 500;
-  transition: 0.3s;
 }
-.ma_twobanner .inbox .btn_go::after {
+.ma_eduevt .inbox .morebox {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: auto;
+}
+.ma_eduevt .inbox .morebox::before {
   content: "";
-  width: 18px;
-  height: 18px;
-  margin-left: auto;
-  background: url(../images/ico_18_more_white.svg) no-repeat center/contain;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: #c6c6c6;
 }
-.ma_twobanner .inbox .btn_go:focus,
-.ma_twobanner .inbox .btn_go:hover {
-  background-color: rgba(29, 29, 29, 0.1);
+.ma_eduevt .inbox .morebox .more {
+  position: relative;
+  padding: 0 16px;
+  background: url(../images/ico_12_plus_blue.svg) no-repeat right center/12px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.ma_eduevt .inbox:focus .imgbox::before,
+.ma_eduevt .inbox:hover .imgbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 3;
+}
+.ma_eduevt .inbox:focus .txtbox .tit,
+.ma_eduevt .inbox:hover .txtbox .tit {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ma_ismnews {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+  margin-left: 5.71%;
+}
+.ma_ismnews .ismnews_list li {
+  padding: 24px 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+.ma_ismnews .ismnews_list li:first-child {
+  padding-top: 0;
+}
+.ma_ismnews .ismnews_list li .inbox {
+  display: flex;
+  align-items: center;
+}
+.ma_ismnews .ismnews_list li .inbox .tit {
+  flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 24px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.ma_ismnews .ismnews_list li .inbox .tit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #c6c6c6;
+  transform: translateY(-50%);
+}
+.ma_ismnews .ismnews_list li .inbox .date {
+  margin-left: auto;
+  color: #8e8e8e;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.ma_ismnews .ismnews_list li .inbox:hover .tit {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ma_ismnews .ismnews_list li .inbox:hover .tit::before {
+  background-color: #0075e0;
 }
 
 /* ma_gallery_bnzone */

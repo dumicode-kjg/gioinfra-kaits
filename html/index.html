@@ -440,7 +440,6 @@
                     <circle class="bar" cx="50%" cy="50%" r="14" stroke-width="3" />
                   </svg>
                 </button>
-                
               </div>
             </div>
             <div class="ma_visual_menu">
@@ -729,181 +728,113 @@
           </div>
           <!--// NEWS & ALARM -->
 
-          <!-- 논문검색시스템, 논문투고/심사 -->
-          <ul class="ma_twobanner">
-            <li style="background-image: url(../images/main/img_ma_twobanner01.jpg)">
-              <div class="inbox">
-                <div class="txtbox">
-                  <p class="tit">논문검색시스템</p>
-                  <p class="txt">등록된 다양한 논문을 검색 및 다운로드 해보세요.</p>
+          <!-- 교육·행사, 산업보안관리사 소식 -->
+          <div class="ma_eduevt_ismnews">
+            <div class="inner_center">
+              <div class="ma_eduevt">
+                <div class="titlebox">
+                  <h2 class="title"><span class="color">KAITS</span> 교육·행사</h2>
                 </div>
-                <a href="#" class="btn_go">검색 바로가기</a>
-              </div>
-            </li>
-            <li style="background-image: url(../images/main/img_ma_twobanner02.jpg)">
-              <div class="inbox">
-                <div class="txtbox">
-                  <p class="tit">논문투고/심사</p>
-                  <p class="txt">학회의 논문투고/심사를 만나보세요.</p>
+                <div class="eduevt_swiper swiper-container">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="#" class="inbox">
+                        <div class="date">
+                          <div class="yymm">24.07</div>
+                          <div class="dd">31</div>
+                        </div>
+                        <div class="imgbox">
+                          <div class="img" style="background-image: url(../images/main/img_ma_eduevt01.png)"></div>
+                        </div>
+                        <div class="txtbox">
+                          <p class="tit">교육 행사 제목입니다. 교육 행사 제목입니다. 교육 행사 제목입니다.</p>
+                          <p class="txt">교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다.</p>
+                        </div>
+                        <div class="morebox">
+                          <span class="more">자세히보기</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="#" class="inbox">
+                        <div class="date">
+                          <div class="yymm">24.07</div>
+                          <div class="dd">31</div>
+                        </div>
+                        <div class="imgbox">
+                          <div class="img" style="background-image: url(../images/main/img_ma_eduevt02.png)"></div>
+                        </div>
+                        <div class="txtbox">
+                          <p class="tit">교육 행사 제목입니다.</p>
+                          <p class="txt">교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다.</p>
+                        </div>
+                        <div class="morebox">
+                          <span class="more">자세히보기</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <a href="#" class="btn_go">투고/심사 바로가기</a>
+                <script>
+                  var maEduEvt = new Swiper(".eduevt_swiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                    breakpoints: {
+                      767: {
+                        slidesPerView: 1,
+                      },
+                    },
+                    observer: true,
+                    observeParents: true,
+                  });
+                </script>
+                <a href="#" class="btn_more">교육·행사 더보기</a>
               </div>
-            </li>
-          </ul>
-          <!--// 논문검색시스템, 논문투고/심사 -->
-
-          <!-- 학회 갤러리, 배너존 -->
-          <div class="ma_gallery_bnzone">
-            <div class="ma_gallery">
-              <div class="titlebox">
-                <h2 class="title">학회 갤러리</h2>
-                <div class="swiper_ctrl">
-                  <button type="button" class="swiper-button-prev"></button>
-                  <div class="swiper-pagination"></div>
-                  <button type="button" class="swiper-button-next"></button>
-                  <button type="button" class="btn_stop_play">자동슬라이드 정지/시작</button>
+              <div class="ma_ismnews">
+                <div class="titlebox">
+                  <h2 class="title"><span class="color">산업보안관리사</span> 소식</h2>
                 </div>
-              </div>
-              <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
+                <ul class="ismnews_list">
+                  <li>
                     <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_gallery01.jpg)"></div>
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">2022년 정기학술발표회</p>
-                        <span class="more">자세히보기</span>
-                      </div>
+                      <p class="tit">산업보안관리사 일정입니다. 산업보안관리사 일정입니다.</p>
+                      <span class="date">2024-07-30</span>
                     </a>
                   </li>
-                  <li class="swiper-slide">
+                  <li>
                     <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <!-- 이미지 없을 시 -->
-                        <div class="noimg"></div>
-                        <!--// 이미지 없을 시 -->
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">2020년 정기학술발표회 2020년 정기학술발표회 2020년 정기학술발표회</p>
-                        <span class="more">자세히보기</span>
-                      </div>
+                      <p class="tit">제 10회 산업보안관리사 시험접수 안내</p>
+                      <span class="date">2024-07-30</span>
                     </a>
                   </li>
-                  <li class="swiper-slide">
+                  <li>
                     <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_gallery01.jpg)"></div>
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">2022년 정기학술발표회</p>
-                        <span class="more">자세히보기</span>
-                      </div>
+                      <p class="tit">한 줄 이상 길어질 시 점처리 한 줄 이상 길어질 시 점처리 한 줄 이상 길어질 시 점처리</p>
+                      <span class="date">2024-07-30</span>
                     </a>
                   </li>
-                  <li class="swiper-slide">
+                  <li>
                     <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <!-- 이미지 없을 시 -->
-                        <div class="noimg"></div>
-                        <!--// 이미지 없을 시 -->
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">2020년 정기학술발표회 2020년 정기학술발표회 2020년 정기학술발표회</p>
-                        <span class="more">자세히보기</span>
-                      </div>
+                      <p class="tit">산업보안관리사 일정입니다. 산업보안관리사 일정입니다.</p>
+                      <span class="date">2024-07-30</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="inbox">
+                      <p class="tit">제 9회 산업보안관리사 시험접수 안내</p>
+                      <span class="date">2024-07-30</span>
                     </a>
                   </li>
                 </ul>
+                <a href="#" class="btn_more">산업보안관리사 소식 더보기</a>
               </div>
-              <!-- 게시물 없을 시 -->
-              <!-- <div class="nodata_box_wrap">
-                <div class="nodata_box">
-                  <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
-                  <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
-                </div>
-              </div> -->
-              <!--// 게시물 없을 시 -->
-            </div>
-            <div class="ma_bnzone">
-              <div class="titlebox">
-                <h2 class="title">배너존</h2>
-                <div class="swiper_ctrl">
-                  <button type="button" class="swiper-button-prev"></button>
-                  <div class="swiper-pagination"></div>
-                  <button type="button" class="swiper-button-next"></button>
-                  <button type="button" class="btn_stop_play">자동슬라이드 정지/시작</button>
-                </div>
-              </div>
-              <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_bnzone01.jpg)"></div>
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">한국측량학회지</p>
-                        <p class="txt">ISSN 1598 - 4850</p>
-                        <span class="more">최신호 바로가기</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_bnzone01.jpg)"></div>
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">한국측량학회지</p>
-                        <p class="txt">ISSN 1598 - 4850</p>
-                        <span class="more">최신호 바로가기</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="#" class="inbox">
-                      <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_bnzone01.jpg)"></div>
-                      </div>
-                      <div class="txtbox">
-                        <p class="tit">한국측량학회지</p>
-                        <p class="txt">ISSN 1598 - 4850</p>
-                        <span class="more">최신호 바로가기</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- 게시물 없을 시 -->
-              <!-- <div class="nodata_box_wrap">
-                <div class="nodata_box">
-                  <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
-                  <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
-                </div>
-              </div> -->
-              <!--// 게시물 없을 시 -->
             </div>
           </div>
-          <!--// 학회 갤러리, 배너존 -->
+          <!--// 교육·행사, 산업보안관리사 소식 -->
 
-          <!-- 한국측량학회 소개 -->
-          <div class="ma_intro">
-            <div class="inbox">
-              <div class="txtbox">
-                <h2 class="tit">한국측량학회 소개</h2>
-                <p class="txt">
-                  본 학회 홈페이지를 방문해 주신 회원 여러분과
-                  <span class="mobile_br"></span> 방문자 여러분 환영합니다.
-                </p>
-              </div>
-              <div class="linkbox">
-                <a href="#">학회장 인사말</a>
-                <a href="#">학회 연혁</a>
-              </div>
-            </div>
-          </div>
-          <!--// 한국측량학회 소개 -->
+          <!-- 간행물 -->
+          <div class="ma_publications">간행물간행물간행물간행물간행물간행물간행물</div>
+          <!--// 간행물 -->
         </div>
         <!-- ma_content -->
 
