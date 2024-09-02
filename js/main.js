@@ -124,4 +124,72 @@ $(function () {
       },
     },
   });
+
+  //main EduEvt
+  var maEduEvt = new Swiper(".eduevt_swiper", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+      },
+    },
+    observer: true,
+    observeParents: true,
+  });
+
+  //간행물
+  $('.ma_publications .intab a').on('click', function(){
+    $('.ma_publications .intab a').removeAttr('aria-selected');
+    $(this).attr('aria-selected','true');
+
+    $('.ma_publications .intabcon').hide().eq($('.ma_publications .intab a').index(this)).show();
+    
+    return false;
+  })
+  var maPublications1 = new Swiper(".pc_swp01 .swiper-container", {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+      },
+    },
+    observer: true,
+    observeParents: true,
+    pagination: {
+      el: ".pc_swp01 .swiper-pagination",
+      type: "custom",
+      renderCustom: function (swiper, current, total) {
+        return '<span class="current">' + current + "</span>" + '<span class="slash">/</span>' + '<span class="total">' + total + "</span>";
+      },
+    },
+    navigation: {
+      nextEl: ".pc_swp01 .swiper-button-next",
+      prevEl: ".pc_swp01 .swiper-button-prev",
+    },
+  });
+
+  var maPublications2 = new Swiper(".pc_swp02 .swiper-container", {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+      },
+    },
+    observer: true,
+    observeParents: true,
+    pagination: {
+      el: ".pc_swp02 .swiper-pagination",
+      type: "custom",
+      renderCustom: function (swiper, current, total) {
+        return '<span class="current">' + current + "</span>" + '<span class="slash">/</span>' + '<span class="total">' + total + "</span>";
+      },
+    },
+    navigation: {
+      nextEl: ".pc_swp02 .swiper-button-next",
+      prevEl: ".pc_swp02 .swiper-button-prev",
+    },
+  });
 });
