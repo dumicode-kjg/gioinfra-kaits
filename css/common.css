@@ -415,7 +415,6 @@
 
 /* foot_banners */
 .foot_banners_wrap {
-  margin-top: 80px;
   border-top: 1px solid #d8d8d8;
 }
 .foot_banners {
@@ -1006,9 +1005,6 @@
   #container {
   }
 
-  .foot_banners_wrap {
-    margin-top: 60px;
-  }
   .foot_banners .swiper_ctrl {
     margin-right: 2px;
   }

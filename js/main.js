@@ -148,7 +148,7 @@ $(function () {
     return false;
   })
   var maPublications1 = new Swiper(".pc_swp01 .swiper-container", {
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     spaceBetween: 24,
     breakpoints: {
       767: {
@@ -171,7 +171,7 @@ $(function () {
   });
 
   var maPublications2 = new Swiper(".pc_swp02 .swiper-container", {
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     spaceBetween: 24,
     breakpoints: {
       767: {
