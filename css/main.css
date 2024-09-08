@@ -566,6 +566,8 @@
   position: relative;
   width: 100%;
   height: 408px;
+  background: url(../images/bg_noimg.svg) no-repeat center/80% auto;
+  background-color: #D8D8D8;
 }
 .ma_alarm .alarm_swiper .imgbox .img {
   position: absolute;
@@ -688,6 +690,8 @@
   height: 233px;
   border: 1px solid #d8d8d8;
   overflow: hidden;
+  background: url(../images/bg_noimg.svg) no-repeat center/80% auto;
+  background-color: #D8D8D8;
 }
 .ma_eduevt .inbox .imgbox .img {
   position: absolute;
@@ -695,6 +699,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -901,6 +906,7 @@
 }
 .ma_publications .publications_swiper .swiper-slide {
   width: 260px;
+  height: auto;
   transform: translateY(20px);
   transition: transform 0.2s;
 }
@@ -910,6 +916,7 @@
 .ma_publications .publications_swiper .inbox {
   display: block;
   position: relative;
+  height: 100%;
   overflow: hidden;
   transition: 0.2s;
 }
@@ -936,6 +943,9 @@
 }
 .ma_publications .publications_swiper .inbox .imgbox {
   position: relative;
+  height: 100%;
+  background: url(../images/bg_noimg.svg) no-repeat center/80% auto;
+  background-color: #D8D8D8;
 }
 .ma_publications .publications_swiper .inbox .imgbox::before {
   content: "";
@@ -1020,7 +1030,6 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  border-radius: 24px;
   text-align: center;
 }
 
@@ -1041,14 +1050,24 @@
   word-break: keep-all;
 }
 
-.ma_news_tab .in_cont .nodata_box_wrap {
+.ma_news_alarm .nodata_box_wrap {
   border: 1px solid #d8d8d8;
   background-color: #f8f8f8;
 }
 
-.ma_gallery_bnzone .ma_gallery .nodata_box_wrap,
-.ma_gallery_bnzone .ma_bnzone .nodata_box_wrap {
-  height: 313px;
+.ma_alarm .nodata_box_wrap {
+  height: 408px;
+  margin-top: 32px;
+}
+
+.ma_eduevt_ismnews .nodata_box_wrap {
+  height: 369px;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+
+.ma_publications .nodata_box_wrap {
+  height: 370px;
   border: 1px solid #d8d8d8;
   background-color: #f8f8f8;
 }
@@ -1207,6 +1226,14 @@
   }
   .ma_publications .swiper_ctrl .swiper-pagination .slash {
     margin: 0 4px;
+  }
+
+  /* nodata */
+  .ma_publications .nodata_box_wrap {
+    width: auto;
+    height: 540px;
+    margin-right: 35px;
+    background-color: #fff;
   }
 }
 
@@ -1379,5 +1406,15 @@
     right: 16px;
     bottom: 50px;
     left: 16px;
+  }
+
+  /* nodata */
+  .ma_eduevt_ismnews .nodata_box_wrap {
+    height: 305px;
+  }
+
+  .ma_publications .nodata_box_wrap {
+    height: 432px;
+    margin: 0 16px;
   }
 }
