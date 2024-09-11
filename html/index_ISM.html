@@ -22,7 +22,7 @@
 
   <body>
     <!-- 메인 공지팝업 -->
-    <div class="main_notice_pop" style="display: none">
+    <div class="main_notice_pop">
       <!-- pop_con 2개 이상일 경우 디폴트 순서층 이외 z-index로 층 조절 가능 -->
       <div class="pop_con" style="z-index: 5">
         <div class="img">
@@ -246,18 +246,49 @@
         <div class="ma_visual_wrap bg01">
           <div class="inner_center">
             <div class="ma_visual">
-              좌측영역
+              <p class="visual_txt">“<strong>산업 보안</strong>의 선두주자, <br />대한민국 기업의 <strong>안전</strong>을 책임지는”</p>
+              <p class="visual_tit">산업보안관리사 자격검정</p>
+              <a href="#" class="visual_btn">자격소개 바로가기</a>
             </div>
             <div class="ma_visual_menu">
-              우측영역
+              <ul class="visual_menu">
+                <li>
+                  <a href="#" class="inbox">
+                    <div class="ico"></div>
+                    <p class="txt">자격시험원서접수</p>
+                    <span class="go" aria-hidden="true">바로가기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inbox">
+                    <div class="ico"></div>
+                    <p class="txt">자격증 발급</p>
+                    <span class="go" aria-hidden="true">바로가기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inbox">
+                    <div class="ico"></div>
+                    <p class="txt">보수교육 접수</p>
+                    <span class="go" aria-hidden="true">바로가기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inbox">
+                    <div class="ico"></div>
+                    <p class="txt">합격자 조회</p>
+                    <span class="go" aria-hidden="true">바로가기</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <ul class="visual_family_links">
             <li>
-              <a href="#" aria-selected="true">협회 <br />홈페이지</a>
+              <a href="#">협회 <br />홈페이지</a>
             </li>
             <li>
-              <a href="#">산업보안관리사 <br />홈페이지</a>
+              <a href="#" aria-selected="true">산업보안관리사 <br />홈페이지</a>
             </li>
             <li>
               <a href="#">산업정보 <br />정보도서관</a>
@@ -266,12 +297,12 @@
         </div>
 
         <div class="ma_content">
-          <!-- NEWS & ALARM -->
-          <div class="ma_news_alarm">
+          <!-- NEWS & SCHEDULE -->
+          <div class="ma_news_schedule">
             <!-- NEWS -->
             <div class="ma_news">
               <div class="titlebox">
-                <h2 class="title"><span class="color">KAITS</span> 소식</h2>
+                <h2 class="title">알립니다</h2>
               </div>
 
               <ul class="ma_news_tab">
@@ -324,13 +355,13 @@
                   <a href="#" class="btn_more">공지사항 더보기</a>
                 </li>
                 <li>
-                  <h3><a href="#m_tab01">보도자료</a></h3>
+                  <h3><a href="#m_tab01">자료실</a></h3>
                   <div id="m_tab01" class="in_cont">
                     <ul>
                       <li>
                         <a href="#" class="inbox">
-                          <h4 class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다.</h4>
-                          <p class="txt">보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다.</p>
+                          <h4 class="tit">자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다.</h4>
+                          <p class="txt">자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다.</p>
                           <div class="date">
                             <span class="dd">24</span>
                             <span class="yymm">24. 07</span>
@@ -339,8 +370,8 @@
                       </li>
                       <li>
                         <a href="#" class="inbox">
-                          <h4 class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다.</h4>
-                          <p class="txt">보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다.</p>
+                          <h4 class="tit">자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다.</h4>
+                          <p class="txt">자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다.</p>
                           <div class="date">
                             <span class="dd">16</span>
                             <span class="yymm">24. 07</span>
@@ -349,8 +380,8 @@
                       </li>
                       <li>
                         <a href="#" class="inbox">
-                          <h4 class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다.</h4>
-                          <p class="txt">보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다.</p>
+                          <h4 class="tit">자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다.</h4>
+                          <p class="txt">자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다.</p>
                           <div class="date">
                             <span class="dd">12</span>
                             <span class="yymm">24. 07</span>
@@ -359,8 +390,8 @@
                       </li>
                       <li>
                         <a href="#" class="inbox">
-                          <h4 class="tit">보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다. 보도자료 제목입니다.</h4>
-                          <p class="txt">보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다. 보도자료 내용입니다.</p>
+                          <h4 class="tit">자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다. 자료실 제목입니다.</h4>
+                          <p class="txt">자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다. 자료실 내용입니다.</p>
                           <div class="date">
                             <span class="dd">10</span>
                             <span class="yymm">24. 07</span>
@@ -369,16 +400,16 @@
                       </li>
                     </ul>
                   </div>
-                  <a href="#" class="btn_more">보도자료 더보기</a>
+                  <a href="#" class="btn_more">자료실 더보기</a>
                 </li>
                 <li>
-                  <h3><a href="#m_tab01">입찰공고</a></h3>
+                  <h3><a href="#m_tab01">합격수기</a></h3>
                   <div id="m_tab01" class="in_cont">
                     <ul>
                       <li>
                         <a href="#" class="inbox">
-                          <h4 class="tit">입찰공고 제목입니다. 입찰공고 제목입니다. 입찰공고 제목입니다. 입찰공고 제목입니다. 입찰공고 제목입니다. 입찰공고 제목입니다.</h4>
-                          <p class="txt">입찰공고 내용입니다. 입찰공고 내용입니다. 입찰공고 내용입니다. 입찰공고 내용입니다. 입찰공고 내용입니다. 입찰공고 내용입니다.</p>
+                          <h4 class="tit">합격수기 제목입니다. 합격수기 제목입니다. 합격수기 제목입니다. 합격수기 제목입니다. 합격수기 제목입니다. 합격수기 제목입니다.</h4>
+                          <p class="txt">합격수기 내용입니다. 합격수기 내용입니다. 합격수기 내용입니다. 합격수기 내용입니다. 합격수기 내용입니다. 합격수기 내용입니다.</p>
                           <div class="date">
                             <span class="dd">24</span>
                             <span class="yymm">24. 07</span>
@@ -387,10 +418,10 @@
                       </li>
                     </ul>
                   </div>
-                  <a href="#" class="btn_more">입찰공고 더보기</a>
+                  <a href="#" class="btn_more">합격수기 더보기</a>
                 </li>
                 <li>
-                  <h3><a href="#m_tab01">인재채용</a></h3>
+                  <h3><a href="#m_tab01">취업정보</a></h3>
                   <div id="m_tab01" class="in_cont">
                     <!-- data없을시 -->
                     <div class="nodata_box_wrap">
@@ -401,293 +432,72 @@
                     </div>
                     <!--// data없을시 -->
                   </div>
-                  <a href="#" class="btn_more">인재채용 더보기</a>
+                  <a href="#" class="btn_more">취업정보 더보기</a>
                 </li>
               </ul>
             </div>
             <!--// NEWS -->
-            <!-- ALARM -->
-            <div class="ma_alarm">
+            <!-- SCHEDULE -->
+            <div class="ma_schedule">
               <div class="titlebox">
-                <h2 class="title"><span class="color">KAITS</span> 알림</h2>
-                <div class="swiper_ctrl">
-                  <div class="swiper-pagination"></div>
-                  <button type="button" class="swiper-button-prev"></button>
-                  <button type="button" class="btn_stop_play">자동슬라이드 정지/시작</button>
-                  <button type="button" class="swiper-button-next"></button>
-                </div>
+                <h2 class="title">주요일정</h2>
               </div>
 
-              <div class="alarm_swiper swiper-container">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <a href="#" class="imgbox">
-                      <div class="img" style="background-image: url(../images/main/img_ma_alarm01.png)"></div>
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <div href="#" class="imgbox"></div>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="#" class="imgbox">
-                      <div class="img" style="background-image: url(../images/main/img_ma_alarm01.png)"></div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- data없을시 -->
-              <!-- <div class="nodata_box_wrap">
-                <div class="nodata_box">
-                  <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
-                  <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
-                </div>
-              </div> -->
-              <!--// data없을시 -->
-            </div>
-            <!--// ALARM -->
-          </div>
-          <!--// NEWS & ALARM -->
-
-          <!-- 교육·행사, 산업보안관리사 소식 -->
-          <div class="ma_eduevt_ismnews">
-            <div class="inner_center">
-              <div class="ma_eduevt">
-                <div class="titlebox">
-                  <h2 class="title"><span class="color">KAITS</span> 교육·행사</h2>
-                </div>
-                <div class="eduevt_swiper swiper-container">
-                  <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="date">
-                          <div class="yymm">24.07</div>
-                          <div class="dd">31</div>
-                        </div>
-                        <div class="imgbox">
-                          <div class="img" style="background-image: url(../images/main/img_ma_eduevt01.png)"></div>
-                        </div>
-                        <div class="txtbox">
-                          <p class="tit">교육 행사 제목입니다. 교육 행사 제목입니다. 교육 행사 제목입니다.</p>
-                          <p class="txt">교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다.</p>
-                        </div>
-                        <div class="morebox">
-                          <span class="more">자세히보기</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="date">
-                          <div class="yymm">24.07</div>
-                          <div class="dd">31</div>
-                        </div>
-                        <div class="imgbox">
-                          <!-- <div class="img" style="background-image: url(../images/main/img_ma_eduevt02.png)"></div> -->
-                        </div>
-                        <div class="txtbox">
-                          <p class="tit">교육 행사 제목입니다.</p>
-                          <p class="txt">교육행사 내용입니다. 교육행사 내용입니다. 교육행사 내용입니다.</p>
-                        </div>
-                        <div class="morebox">
-                          <span class="more">자세히보기</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <a href="#" class="btn_more">교육·행사 더보기</a>
-                <!-- data없을시 -->
-                <!-- <div class="nodata_box_wrap">
-                  <div class="nodata_box">
-                    <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
-                    <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
+              <div class="schedule_cont">
+                <div class="itembox">
+                  <div class="titarea">
+                    <h3 class="tit">연간시험 <br />일정</h3>
+                    <a href="#" class="btn_detail">자세히 보기</a>
                   </div>
-                </div> -->
-                <!--// data없을시 -->
-              </div>
-              <div class="ma_ismnews">
-                <div class="titlebox">
-                  <h2 class="title"><span class="color">산업보안관리사</span> 소식</h2>
+                  <table class="conarea">
+                    <caption>연간시험 일정 내역표 - 회차, 날짜, 지역으로 구성</caption>
+                    <thead class="in_head">
+                      <tr class="tr">
+                        <th scope="col" class="col">회차</th>
+                        <th scope="col" class="col">날짜</th>
+                        <th scope="col" class="col">지역</th>
+                      </tr>
+                    </thead>
+                    <tbody class="in_body">
+                      <tr class="tr">
+                        <td class="col">제 15회</td>
+                        <td class="col">2024.5.25</td>
+                        <td class="col">서울/대전</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="col">제 15회</td>
+                        <td class="col">2024.5.25</td>
+                        <td class="col">서울/대전</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="col">제 15회</td>
+                        <td class="col">2024.5.25</td>
+                        <td class="col">서울/대전</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <ul class="ismnews_list">
-                  <li>
-                    <a href="#" class="inbox">
-                      <p class="tit">산업보안관리사 일정입니다. 산업보안관리사 일정입니다.</p>
-                      <span class="date">2024-07-30</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="inbox">
-                      <p class="tit">제 10회 산업보안관리사 시험접수 안내</p>
-                      <span class="date">2024-07-30</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="inbox">
-                      <p class="tit">한 줄 이상 길어질 시 점처리 한 줄 이상 길어질 시 점처리 한 줄 이상 길어질 시 점처리</p>
-                      <span class="date">2024-07-30</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="inbox">
-                      <p class="tit">산업보안관리사 일정입니다. 산업보안관리사 일정입니다.</p>
-                      <span class="date">2024-07-30</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="inbox">
-                      <p class="tit">제 9회 산업보안관리사 시험접수 안내</p>
-                      <span class="date">2024-07-30</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn_more">산업보안관리사 소식 더보기</a>
-                <!-- data없을시 -->
-                <!-- <div class="nodata_box_wrap">
-                  <div class="nodata_box">
-                    <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
-                    <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
+                <div class="itembox">
+                  <div class="titarea">
+                    <h3 class="tit">보수교육 <br />일정</h3>
+                    <a href="#" class="btn_detail">자세히 보기</a>
                   </div>
-                </div> -->
-                <!--// data없을시 -->
-              </div>
-            </div>
-          </div>
-          <!--// 교육·행사, 산업보안관리사 소식 -->
-
-          <!-- 간행물 -->
-          <div class="ma_publications">
-            <div class="titlebox">
-              <h2 class="title"><span class="color">KAITS</span> 간행물</h2>
-              <ul class="intab">
-                <li><a href="#" aria-selected="true">전체</a></li>
-                <li><a href="#">정기간행물</a></li>
-                <li><a href="#">비정기간행물</a></li>
-              </ul>
-            </div>
-            <div class="contbox">
-              <div class="intabcon pc_swp01" style="display: block">
-                <div class="publications_swiper swiper-container">
-                  <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="tag bg_blue">비정기</div>
-                        <div class="imgbox"><img src="../images/main/img_ma_publications01.png" alt="" /></div>
-                        <div class="txtbox bg_blue">
-                          <span class="tagtxt">정기 간행물</span>
-                          <p class="tit">산보협_Security Insights_6월호</p>
-                          <div class="date_more">
-                            <span class="date">2024-07-30</span>
-                            <span class="more">자세히보기</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="tag bg_orange">정기</div>
-                        <div class="imgbox"><img src="../images/main/img_ma_publications02.png" alt="" /></div>
-                        <div class="txtbox bg_orange">
-                          <span class="tagtxt">정기 간행물</span>
-                          <p class="tit">산보협_Security Insights_6월호</p>
-                          <div class="date_more">
-                            <span class="date">2024-07-30</span>
-                            <span class="more">자세히보기</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="tag bg_blue">비정기</div>
-                        <div class="imgbox"></div>
-                        <div class="txtbox bg_blue">
-                          <span class="tagtxt">정기 간행물</span>
-                          <p class="tit">산보협_Security Insights_6월호</p>
-                          <div class="date_more">
-                            <span class="date">2024-07-30</span>
-                            <span class="more">자세히보기</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="tag bg_orange">정기</div>
-                        <div class="imgbox"><img src="../images/main/img_ma_publications04.png" alt="" /></div>
-                        <div class="txtbox bg_orange">
-                          <span class="tagtxt">정기 간행물</span>
-                          <p class="tit">산보협_Security Insights_6월호</p>
-                          <div class="date_more">
-                            <span class="date">2024-07-30</span>
-                            <span class="more">자세히보기</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="tag bg_blue">비정기</div>
-                        <div class="imgbox"><img src="../images/main/img_ma_publications01.png" alt="" /></div>
-                        <div class="txtbox bg_blue">
-                          <span class="tagtxt">정기 간행물</span>
-                          <p class="tit">산보협_Security Insights_6월호</p>
-                          <div class="date_more">
-                            <span class="date">2024-07-30</span>
-                            <span class="more">자세히보기</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="swiper_ctrl">
-                  <button type="button" class="swiper-button-prev">prev</button>
-                  <button type="button" class="swiper-button-next">next</button>
-                  <button type="button" class="btn_more">더보기</button>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <div class="intabcon pc_swp02">
-                <div class="publications_swiper swiper-container">
-                  <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                      <a href="#" class="inbox">
-                        <div class="tag bg_orange">정기</div>
-                        <div class="imgbox"><img src="../images/main/img_ma_publications02.png" alt="" /></div>
-                        <div class="txtbox bg_orange">
-                          <span class="tagtxt">정기 간행물</span>
-                          <p class="tit">산보협_Security Insights_6월호</p>
-                          <div class="date_more">
-                            <span class="date">2024-07-30</span>
-                            <span class="more">자세히보기</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="swiper_ctrl">
-                  <button type="button" class="swiper-button-prev">prev</button>
-                  <button type="button" class="swiper-button-next">next</button>
-                  <button type="button" class="btn_more">더보기</button>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <div class="intabcon pc_swp03">
-                <!-- data없을시 -->
-                <div class="nodata_box_wrap">
-                  <div class="nodata_box">
-                    <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
-                    <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
+                  <div class="conarea">
+                    <!-- data없을시 -->
+                    <div class="nodata_box_wrap">
+                      <div class="nodata_box">
+                        <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
+                        <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
+                      </div>
+                    </div>
+                    <!--// data없을시 -->
                   </div>
                 </div>
-                <!--// data없을시 -->
               </div>
             </div>
+            <!--// SCHEDULE -->
           </div>
-          <!--// 간행물 -->
+          <!--// NEWS & SCHEDULE -->
         </div>
         <!-- ma_content -->
 
