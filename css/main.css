@@ -957,6 +957,17 @@
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: 0.2s;
+  z-index: 1;
+}
+.ma_publications .publications_swiper .inbox .imgbox::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #d8d8d8;
+  pointer-events: none;
 }
 .ma_publications .publications_swiper .inbox .imgbox img {
   width: 100%;
@@ -970,6 +981,7 @@
   color: #fff;
   transform: translateY(101%);
   transition: 0.2s;
+  z-index: 3;
 }
 .ma_publications .publications_swiper .inbox .txtbox .tagtxt {
   font-size: 14px;

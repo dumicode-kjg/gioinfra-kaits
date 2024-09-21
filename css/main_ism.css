@@ -109,7 +109,7 @@
   background: linear-gradient(211deg, rgba(0, 0, 0, 0) -10.36%, rgba(0, 0, 0, 0) 84.82%, rgba(0, 0, 0, 0.1) 85.02%, rgba(0, 0, 0, 0.1) 90.13%), #ff8a00;
 }
 .ma_visual_menu .visual_menu > li:nth-child(4) .inbox .ico {
-  background-image: url(../images/main/ico_80_visualmenu04.svg);
+  background-image: url(../images/main/ico_80_visualmenu04.png);
 }
 .ma_visual_menu .visual_menu > li .inbox .txt {
   margin: 24px 0;
